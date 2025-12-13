@@ -17,7 +17,7 @@ const slides = [
   },
   {
     image:
-      "../../public/asset/slide3.jpg",
+      "../../public/asset/slide44.jpg",
     title: "English Vibes",
     subtitle: "Join a modern club to prictice, grow, and shine",
   },

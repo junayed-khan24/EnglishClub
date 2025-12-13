@@ -3,12 +3,22 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import AboutClub from './assets/AboutClub.jsx';
+import NotFoundPage from './assets/NotFoundPage.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "aboutClub",
+    element: <AboutClub></AboutClub>
+  },
+  {
+    path: "*",
+    element: <NotFoundPage></NotFoundPage>
   },
 ]);
 

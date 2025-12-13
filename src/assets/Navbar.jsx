@@ -22,7 +22,7 @@ const Navbar = () => {
             <Link to="/" className="text-gray-700 hover:text-red-600">
               Home
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-red-600">
+            <Link to="/aboutClub" className="text-gray-700 hover:text-red-600">
               About
             </Link>
             <Link
@@ -116,7 +116,7 @@ const Navbar = () => {
           </Link>
            <div className="flex justify-center items-center gap-2 text-red-700 text-xl my-8 ">
               <FaPhoneAlt size={24}></FaPhoneAlt>
-              01867-264726
+              01867-2647**
             </div>
         </div>
       )}

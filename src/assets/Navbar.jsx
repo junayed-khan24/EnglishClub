@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
             <div className="flex justify-center items-center gap-2 text-red-700 text-xl">
               <FaPhoneAlt size={24}></FaPhoneAlt>
-              01867-264726
+              01867-2647**
             </div>
           </div>
 

@@ -24,7 +24,6 @@ function App() {
       <About></About>
       <div className='divider divider-horizontal bg-red-300 h-1 w-full'></div>
       <Feedback></Feedback>
-      <MymensinghMap></MymensinghMap>
       <Contact></Contact>
       <Footer></Footer>
 

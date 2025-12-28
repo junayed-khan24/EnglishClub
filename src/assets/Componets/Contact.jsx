@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import MymensinghMap from "./MymensinghMap";
 
 const Contact = () => {
   return (
@@ -12,112 +12,57 @@ const Contact = () => {
             Contact <span className="text-primary">EnglishClub</span>
           </h2>
           <p className="mt-3 text-base-content/70 max-w-xl mx-auto">
-            Have questions about our courses or admissions?  
+            Have questions about our courses or admissions?
             Get in touch with EnglishClub today.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-
-          {/* Contact Info */}
-          <div className="card bg-base-100 shadow-xl">
-            <div className="card-body space-y-6">
-              <h3 className="card-title text-2xl">Get In Touch</h3>
-
-              <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-primary/10 text-primary">
-                  <FaPhoneAlt className="text-xl" />
-                </div>
-                <div>
-                  <p className="font-medium">Phone</p>
-                  <p className="text-base-content/70">
-                    +880 1XXX-XXXXXX
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-primary/10 text-primary">
-                  <FaEnvelope className="text-xl" />
-                </div>
-                <div>
-                  <p className="font-medium">Email</p>
-                  <p className="text-base-content/70">
-                    englishclub@gmail.com
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="p-3 rounded-full bg-primary/10 text-primary">
-                  <FaMapMarkerAlt className="text-xl" />
-                </div>
-                <div>
-                  <p className="font-medium">Location</p>
-                  <p className="text-base-content/70">
-                    Dhaka, Bangladesh
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
 
           {/* Contact Form */}
-          <div className="card bg-base-100 shadow-xl">
-            <div className="card-body">
+          <div className="card bg-base-100 shadow-xl h-[400px]">
+            <div className="card-body overflow-y-auto">
               <h3 className="card-title text-2xl mb-4">
                 Send Us a Message
               </h3>
 
               <form className="space-y-4">
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Your Name</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your name"
-                    className="input input-bordered w-full"
-                  />
-                </div>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="input input-bordered w-full"
+                />
 
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Your Email</span>
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="input input-bordered w-full"
-                  />
-                </div>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="input input-bordered w-full"
+                />
 
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Phone Number</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your phone number"
-                    className="input input-bordered w-full"
-                  />
-                </div>
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  className="input input-bordered w-full"
+                />
 
-                <div className="form-control gap-2">
-                  <label className="label">
-                    <span className="label-text">Message</span>
-                  </label>
-                  <textarea
-                    className="textarea textarea-bordered h-28"
-                    placeholder="Write your message"
-                  ></textarea>
-                </div>
+                <textarea
+                  className="textarea textarea-bordered h-24"
+                  placeholder="Your Message"
+                ></textarea>
 
-                <button className="btn btn-primary w-full mt-4">
+                <button className="btn btn-primary w-full">
                   Send Message
                 </button>
               </form>
             </div>
+          </div>
+
+          {/* Map Section */}
+          <div className="h-[400px] rounded-xl overflow-hidden shadow-xl bg-base-100">
+            <h3 className="text-xl font-semibold text-center py-3">
+              EnglishClub Location
+            </h3>
+            <MymensinghMap />
           </div>
 
         </div>

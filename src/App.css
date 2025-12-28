@@ -9,3 +9,8 @@
   background-color: #e41818; /* গাঢ় লাল */
   opacity: 1;
 }
+
+
+.leaflet-container {
+  z-index: 0 !important;
+}

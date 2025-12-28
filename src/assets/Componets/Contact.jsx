@@ -103,7 +103,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className="form-control">
+                <div className="form-control gap-2">
                   <label className="label">
                     <span className="label-text">Message</span>
                   </label>

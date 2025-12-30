@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -5,8 +6,6 @@
 @import "swiper/css";
 @import "swiper/css/pagination";
 @import "swiper/css/navigation";
-
-
 
 
 
@@ -25,4 +24,11 @@
 .swiper-pagination-bullet-active {
   background-color: #e41818; /* গাঢ় লাল */
   opacity: 1;
+}
+
+.arimo-uniquifier {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
 }

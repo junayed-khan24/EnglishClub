@@ -36,7 +36,9 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden text-gray-700"
             >
-              {isOpen ? "✕" : "☰"}
+              <div className="text-4xl">
+                {isOpen ? "✕" : "☰"}
+              </div>
             </button>
           </div>
         </div>

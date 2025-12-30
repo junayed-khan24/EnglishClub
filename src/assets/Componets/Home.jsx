@@ -10,7 +10,7 @@ import Slider from './Slider';
 
 const Home = () => {
     return (
-        <div>
+        <div className='arimo-uniquifier'> 
              <Navbar></Navbar>
              <Slider></Slider>
              <Courses></Courses>

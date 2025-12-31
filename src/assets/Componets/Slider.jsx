@@ -12,13 +12,13 @@ import Slide3 from "../../../public/asset/Slide3.jpg";
 
 const slides = [
   {
-    image: Slide1,
+    image: Slide2,
     title: "Catching Fish",
     subtitle:
       "Experience the thrill of fishing adventures, patience, nature, and unforgettable moments by water.",
   },
   {
-    image: Slide2,
+    image: Slide1,
     title: "Write Stories",
     subtitle:
       "Unleash creativity through compelling stories that inspire emotions, ideas, and imagination worldwide.",

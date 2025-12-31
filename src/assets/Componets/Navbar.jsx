@@ -21,9 +21,9 @@ const Navbar = () => {
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8 items-center font-bold">
               <Link to="/" className="hover:text-red-600">Home</Link>
-              <Link to="/aboutClub" className="hover:text-red-600">About</Link>
-              <Link to="/services" className="hover:text-red-600">Services</Link>
-              <Link to="/contact" className="hover:text-red-600">Contact</Link>
+              <Link to="/" className="hover:text-red-600">About</Link>
+              <Link to="/" className="hover:text-red-600">Courses</Link>
+              <Link to="/" className="hover:text-red-600">Contact</Link>
 
               <div className="flex items-center gap-2 text-red-700">
                 <FaPhoneAlt />

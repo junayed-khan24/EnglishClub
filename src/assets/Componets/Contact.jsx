@@ -9,7 +9,7 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Contact <span className="text-primary">EnglishClub</span>
+            Contact <span className="text-red-700">EnglishClub</span>
           </h2>
           <p className="mt-3 text-base-content/70 max-w-xl mx-auto">
             Have questions about our courses or admissions?
@@ -17,11 +17,12 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        {/* Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
 
           {/* Contact Form */}
-          <div className="card bg-base-100 shadow-xl h-[400px]">
-            <div className="card-body overflow-y-auto">
+          <div className="card bg-base-100 shadow-xl min-h-[420px] md:min-h-[480px]">
+            <div className="card-body">
               <h3 className="card-title text-2xl mb-4">
                 Send Us a Message
               </h3>
@@ -46,11 +47,11 @@ const Contact = () => {
                 />
 
                 <textarea
-                  className="textarea textarea-bordered h-24"
+                  className="textarea textarea-bordered h-28 w-full"
                   placeholder="Your Message"
                 ></textarea>
 
-                <button className="btn btn-primary w-full">
+                <button className="btn bg-red-900 w-full">
                   Send Message
                 </button>
               </form>
@@ -58,11 +59,15 @@ const Contact = () => {
           </div>
 
           {/* Map Section */}
-          <div className="h-[400px] rounded-xl overflow-hidden shadow-xl bg-base-100">
-            <h3 className="text-xl font-semibold text-center py-3">
+          <div className="bg-base-100 rounded-xl shadow-xl overflow-hidden min-h-[420px] md:min-h-[480px] flex flex-col">
+            <h3 className="text-xl font-semibold text-center py-3 border-b">
               EnglishClub Location
             </h3>
-            <MymensinghMap />
+
+            {/* Map */}
+            <div className="flex-1">
+              <MymensinghMap />
+            </div>
           </div>
 
         </div>

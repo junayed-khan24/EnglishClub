@@ -1,11 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-// Import images
+// Import images (keeping your structure)
 import Course1 from "../../../public/asset/corses1.png";
 import Course2 from "../../../public/asset/courses2.jpg";
 import Course3 from "../../../public/asset/coursess3.jpeg";
 import Course4 from "../../../public/asset/couses5.jpg";
+
+// ⭐ Star component
+const Stars = ({ rating }) => {
+  return (
+    <div className="flex gap-1">
+      {[...Array(5)].map((_, i) => (
+        <span
+          key={i}
+          className={`text-lg ${
+            i < Math.round(rating) ? "text-yellow-400" : "text-gray-300"
+          }`}
+        >
+          ★
+        </span>
+      ))}
+    </div>
+  );
+};
 
 const courses = [
   {
@@ -52,58 +71,74 @@ const courses = [
 
 const Courses = () => {
   return (
-    <div className="bg-gray-50 min-h-screen py-16 px-4 md:px-10">
-      {/* Section Header */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-red-800 mb-3">
+    <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen py-16 px-4 md:px-10">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-14"
+      >
+        <h2 className="text-4xl md:text-5xl font-extrabold text-red-800 mb-4">
           Our Courses
         </h2>
-        <p className="text-gray-600 text-lg">
-          Explore our popular English learning programs designed for everyone.
+        <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+          Explore our popular English learning programs designed for beginners,
+          kids, and professionals.
         </p>
-      </div>
+      </motion.div>
 
       {/* Courses Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-        {courses.map((course) => (
-          <div
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+        {courses.map((course, index) => (
+          <motion.div
             key={course.id}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            whileHover={{ y: -8 }}
+            className="bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden"
           >
-            <div className="relative">
-              <img
+            {/* Image */}
+            <div className="relative overflow-hidden">
+              <motion.img
                 src={course.image}
                 alt={course.title}
-                className="w-full h-52 md:h-56 lg:h-60 object-cover"
+                whileHover={{ scale: 1.08 }}
+                transition={{ duration: 0.5 }}
+                className="w-full h-52 md:h-56 object-cover"
               />
-              {/* Price Tag */}
-              <div className="absolute top-3 right-3 bg-red-600 text-white font-bold py-1 px-3 rounded-full text-sm md:text-base shadow-lg">
+
+              {/* Price badge */}
+              <div className="absolute top-4 right-4 bg-red-600 text-white text-sm font-bold px-4 py-1 rounded-full shadow-lg">
                 {course.price}
               </div>
             </div>
 
+            {/* Content */}
             <div className="p-6 flex flex-col flex-1">
               <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">
                 {course.title}
               </h3>
-              <p className="text-gray-600 text-sm md:text-base mb-4 flex-1 leading-relaxed">
+
+              <p className="text-gray-600 text-sm md:text-base mb-4 leading-relaxed flex-1">
                 {course.description}
               </p>
 
               {/* Rating & Date */}
-              <div className="flex justify-between items-center mb-4 text-gray-500 text-sm md:text-base">
-                <span>⭐ {course.rating}</span>
-                <span>{course.date}</span>
+              <div className="flex items-center justify-between mb-5">
+                <Stars rating={course.rating} />
+                <span className="text-sm text-gray-500">{course.date}</span>
               </div>
 
               <Link
                 to={`/courses/${course.id}`}
-                className="bg-red-600 hover:bg-red-500 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg text-center transition-all duration-300"
+                className="mt-auto bg-red-600 hover:bg-red-500 text-white font-semibold py-2.5 rounded-xl text-center transition-all duration-300"
               >
                 View Details
               </Link>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

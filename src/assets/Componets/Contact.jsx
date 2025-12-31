@@ -51,7 +51,7 @@ const Contact = () => {
                   placeholder="Your Message"
                 ></textarea>
 
-                <button className="btn bg-red-900 w-full">
+                <button className="btn bg-red-900 text-white w-full">
                   Send Message
                 </button>
               </form>
@@ -60,9 +60,10 @@ const Contact = () => {
 
           {/* Map Section */}
           <div className="bg-base-100 rounded-xl shadow-xl overflow-hidden min-h-[420px] md:min-h-[480px] flex flex-col">
-            <h3 className="text-xl font-semibold text-center py-3 border-b">
+            <h3 className="text-xl font-semibold py-3 border-b">
               EnglishClub Location
             </h3>
+
 
             {/* Map */}
             <div className="flex-1">

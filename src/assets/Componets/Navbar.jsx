@@ -27,7 +27,7 @@ const Navbar = () => {
 
               <div className="flex items-center gap-2 text-red-700">
                 <FaPhoneAlt />
-                01867-2647**
+                01867-26****
               </div>
             </div>
 

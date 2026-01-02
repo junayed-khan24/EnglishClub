@@ -81,7 +81,7 @@ const Slider = () => {
             <p className="text-white text-sm sm:text-base md:text-xl lg:text-2xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mb-5 sm:mb-8 drop-shadow-md leading-relaxed">
               {slide.subtitle}
             </p>
-            <Link to="/allGroups">
+            <Link to="/">
               <button className="flex items-center gap-2 bg-red-900 hover:bg-red-800 text-white font-semibold py-2 sm:py-3 px-5 sm:px-8 rounded-full text-sm sm:text-lg transition-all duration-300">
                 View More
                 <HiArrowRight className="text-xl sm:text-2xl animate-bounce" />

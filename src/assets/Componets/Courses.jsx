@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 // Import images (keeping your structure)
-import Course1 from "../../../public/asset/corses1.png";
 import Course2 from "../../../public/asset/courses2.jpg";
 import Course3 from "../../../public/asset/coursess3.jpeg";
 import Course4 from "../../../public/asset/couses5.jpg";
@@ -30,7 +29,7 @@ const courses = [
   {
     id: 1,
     title: "Spoken Course",
-    image: Course1,
+    image: Course3,
     description:
       "Boost your confidence in English speaking through interactive sessions and real-life practice.",
     price: "$49",
@@ -48,16 +47,6 @@ const courses = [
     date: "Feb 10, 2025",
   },
   {
-    id: 3,
-    title: "Online Course",
-    image: Course3,
-    description:
-      "Learn English anytime, anywhere! Flexible online classes with live guidance.",
-    price: "$39",
-    rating: 4.7,
-    date: "Mar 5, 2025",
-  },
-  {
     id: 4,
     title: "Grammar Course",
     image: Course4,
@@ -71,7 +60,7 @@ const courses = [
 
 const Courses = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen py-16 px-4 md:px-10">
+    <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen py-16 mt-6 px-4 md:px-10">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -80,7 +69,7 @@ const Courses = () => {
         className="text-center mb-14"
       >
         <h2 className="text-4xl md:text-5xl font-extrabold text-red-800 mb-4">
-          Our Courses
+          Featured Courses
         </h2>
         <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
           Explore our popular English learning programs designed for beginners,
@@ -89,7 +78,7 @@ const Courses = () => {
       </motion.div>
 
       {/* Courses Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {courses.map((course, index) => (
           <motion.div
             key={course.id}
@@ -97,7 +86,7 @@ const Courses = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
             whileHover={{ y: -8 }}
-            className="bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden"
+            className="bg-white  shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden"
           >
             {/* Image */}
             <div className="relative overflow-hidden">
@@ -131,12 +120,12 @@ const Courses = () => {
                 <span className="text-sm text-gray-500">{course.date}</span>
               </div>
 
-              <Link
-                to={`/courses/${course.id}`}
+              {/* <Link
+                to={`/`}
                 className="mt-auto bg-red-600 hover:bg-red-500 text-white font-semibold py-2.5 rounded-xl text-center transition-all duration-300"
               >
                 View Details
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         ))}

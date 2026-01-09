@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       {/* NAVBAR */}
       <nav className=" top-0 left-0 w-full bg-white shadow-md -mb-16">
-        <div className="bg-red-900 text-white text-sm py md:py-1">
+        <div className="bg-red-900 text-white text-sm py md:py-3 py-1">
           <Announce></Announce>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
@@ -24,10 +24,10 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8 items-center font-bold">
-              <Link to="/" className="hover:text-red-600">Home</Link>
-              <Link to="/" className="hover:text-red-600">About</Link>
-              <Link to="/" className="hover:text-red-600">Courses</Link>
-              <Link to="/" className="hover:text-red-600">Contact</Link>
+              <Link to="/" className="hover:text-red-800">Home</Link>
+              <Link to="/" className="hover:text-red-800">About</Link>
+              <Link to="/" className="hover:text-red-800">Courses</Link>
+              <Link to="/" className="hover:text-red-800">Contact</Link>
 
               <div className="flex items-center gap-2 text-red-800">
                 <FaPhoneAlt />
@@ -50,7 +50,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden bg-white shadow-md">
-            {["/", "/aboutClub", "/services", "/contact"].map((path, i) => (
+            {["/", "aboutClub", "Courses", "contact"].map((path, i) => (
               <Link
                 key={i}
                 to={path}

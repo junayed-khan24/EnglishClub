@@ -10,6 +10,7 @@ import About from "./About";
 import Feedback from "./Feedback";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Announce from "./Announce";
 
 const Home = () => {
   useEffect(() => {

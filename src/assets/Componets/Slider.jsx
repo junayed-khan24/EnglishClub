@@ -12,24 +12,25 @@ import Slide3 from "../../../public/asset/Slide3.jpg";
 
 const slides = [
   {
-    image: Slide2,
-    title: "Catching Fish",
+    image: Slide1,
+    title: "Learn English Confidently",
     subtitle:
-      "Experience the thrill of fishing adventures, patience, nature, and unforgettable moments by water.",
+      "Join our English Club to practice speaking, listening, and communication in a friendly environment.",
   },
   {
-    image: Slide1,
-    title: "Write Stories",
+    image: Slide2,
+    title: "Spoken English Coaching",
     subtitle:
-      "Unleash creativity through compelling stories that inspire emotions, ideas, and imagination worldwide.",
+      "Structured coaching to help you speak fluent, clear, and correct English for real-life situations.",
   },
   {
     image: Slide3,
-    title: "Nature Photography",
+    title: "Global Communication Skills",
     subtitle:
-      "Capture stunning natural beauty, wildlife, landscapes, and peaceful moments through your lens.",
+      "Prepare yourself for global opportunities with strong English communication and professional confidence.",
   },
 ];
+
 
 const Slider = () => {
   const [current, setCurrent] = useState(0);

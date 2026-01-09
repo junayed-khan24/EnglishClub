@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Announce from "./Announce";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,12 +9,15 @@ const Navbar = () => {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-[9999]">
+      <nav className=" top-0 left-0 w-full bg-white shadow-md -mb-16">
+        <div className="bg-red-900 text-white text-sm py-1 md:py-2">
+          <Announce></Announce>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
 
             {/* Logo */}
-            <Link to="/" className="text-2xl font-bold text-red-700">
+            <Link to="/" className="text-2xl font-bold text-red-800">
               <span className="text-3xl">E</span>nglish
               <span className="text-3xl">C</span>lub
             </Link>
@@ -25,7 +29,7 @@ const Navbar = () => {
               <Link to="/" className="hover:text-red-600">Courses</Link>
               <Link to="/" className="hover:text-red-600">Contact</Link>
 
-              <div className="flex items-center gap-2 text-red-700">
+              <div className="flex items-center gap-2 text-red-800">
                 <FaPhoneAlt />
                 01867-26****
               </div>
@@ -34,7 +38,7 @@ const Navbar = () => {
             {/* Mobile Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden text-gray-700"
+              className="md:hidden text-red-700"
             >
               <div className="text-4xl">
                 {isOpen ? "✕" : "☰"}
@@ -57,7 +61,7 @@ const Navbar = () => {
               </Link>
             ))}
 
-            <div className="flex justify-center items-center gap-2 text-red-700 py-4">
+            <div className="flex justify-center items-center gap-2 text-red-800 py-4">
               <FaPhoneAlt />
               01867-2647**
             </div>

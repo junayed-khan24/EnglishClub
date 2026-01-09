@@ -99,7 +99,7 @@ const Courses = () => {
               />
 
               {/* Price badge */}
-              <div className="absolute top-4 right-4 bg-red-600 text-white text-sm font-bold px-4 py-1 rounded-full shadow-lg">
+              <div className="absolute top-4 right-4 bg-red-800 text-white text-sm font-bold px-4 py-1 rounded-full shadow-lg">
                 {course.price}
               </div>
             </div>

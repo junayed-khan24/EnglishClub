@@ -81,7 +81,7 @@ const Feedback = () => {
           className="text-gray-600 mb-12 max-w-2xl mx-auto text-base sm:text-base md:text-lg"
         >
           Hear from our students about their experiences at{" "}
-          <span className="text-red-700 font-semibold">EnglishClub</span>,
+          <span className="text-red-800 font-semibold">EnglishClub</span>,
           where we inspire growth, foster excellence, and create a supportive
           learning community.
         </motion.p>

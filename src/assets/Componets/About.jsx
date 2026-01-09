@@ -1,5 +1,6 @@
 // src/components/About.jsx
 import React from 'react';
+import img from '../../../public/asset/hasan.jpg'
 
 const About = () => {
   const profile = {
@@ -24,7 +25,7 @@ const About = () => {
               <div className="relative z-10 p-2 bg-white rounded-lg shadow-xl dark:bg-gray-800">
                 <img 
                   className="w-full h-auto object-cover rounded-lg" 
-                  src='../../public/asset/hasan.jpg' 
+                  src={img}
                   alt={profile.name} 
                   style={{ aspectRatio: '4/5' }} 
                 />

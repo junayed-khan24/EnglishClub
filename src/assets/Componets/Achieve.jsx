@@ -45,7 +45,7 @@ const Achieve = () => {
   };
 
   return (
-    <section ref={sectionRef} className="bg-gradient-to-r from-red-500 from-10% via-red-700 via-30% to-red-500 to-90%">
+    <section ref={sectionRef} className="bg-red-900 py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4 py-16 sm:py-32">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
 

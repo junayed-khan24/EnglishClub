@@ -34,11 +34,11 @@ const Home = () => {
         <Courses />
       </div>
 
-      <div data-aos="zoom-in">
+      <div data-aos="zoom-up">
         <Achieve />
       </div>
 
-      <div className="divider bg-red-300 h-1 w-full my-16"></div>
+      {/* <div className="divider bg-red-300 h-1 w-full my-16"></div> */}
 
       <div data-aos="fade-right">
         <About />

@@ -15,7 +15,7 @@ const testimonials = [
     location: "Uttara, Dhaka",
     image: "https://i.ibb.co/7RyhRwx/avatar1.png",
     feedback:
-      "I joined for Bank Job and Spoken English. The course was structured, practical, and result-oriented. The grammar and writing sessions really helped me improve.",
+      "I joined English Club for Bank Job preparation and Spoken English. The course was structured, practical, and result-oriented. The grammar and writing sessions really helped me improve.",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const testimonials = [
     location: "Mirpur, Dhaka",
     image: "https://i.ibb.co/QdJQ1pH/avatar2.png",
     feedback:
-      "Excellent coaching center! I enrolled in IELTS and saw huge improvement in just a few weeks. The teachers are highly experienced and focus on individual weaknesses.",
+      "Excellent coaching center! I enrolled in IELTS at English Club and saw huge improvement in just a few weeks. The teachers are highly experienced and focus on individual weaknesses.",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const testimonials = [
     location: "Banani, Dhaka",
     image: "https://i.ibb.co/yhj7trb/avatar3.png",
     feedback:
-      "S@ifur’s helped me overcome my speaking fear. The classes are interactive, and teachers are very supportive. I can now express myself confidently in English!",
+      "English Club helped me overcome my speaking fear. The classes are interactive, and teachers are very supportive. I can now express myself confidently in English!",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const testimonials = [
     location: "Dhanmondi, Dhaka",
     image: "https://i.ibb.co/FgP0yQw/avatar4.png",
     feedback:
-      "Great learning environment for kids! My son enjoys every class, and I can already see improvement in his pronunciation and confidence.",
+      "Great learning environment for kids at English Club! My son enjoys every class, and I can already see improvement in his pronunciation and confidence.",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const testimonials = [
     location: "Bashundhara, Dhaka",
     image: "https://i.ibb.co/fvQFY8k/avatar5.png",
     feedback:
-      "The online classes are convenient and well-organized. The instructors are friendly and professional. Highly recommend their online English course!",
+      "The online classes at English Club are convenient and well-organized. The instructors are friendly and professional. Highly recommend their online English course!",
   },
   {
     id: 6,
@@ -55,9 +55,10 @@ const testimonials = [
     location: "Mohakhali, Dhaka",
     image: "https://i.ibb.co/xFm4kLW/avatar6.png",
     feedback:
-      "Best place to prepare for IELTS! Their feedback sessions and mock tests helped me score higher than I expected. Thank you S@ifur’s!",
+      "Best place to prepare for IELTS! English Club’s feedback sessions and mock tests helped me score higher than I expected. Thank you English Club!",
   },
 ];
+
 
 const Feedback = () => {
   return (
@@ -110,15 +111,15 @@ const Feedback = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="bg-white shadow-lg rounded-xl p-6 m-3 relative border-t-4 border-red-800 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full"
+                className="bg-white shadow-lg rounded-xl p-6 m-3 relative border-t-4 border-red-900 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full"
               >
                 {/* Quote Icon */}
-                <div className="absolute top-0 left-0 bg-red-700 text-5xl text-white px-3 py-1 rounded-br-xl font-serif">
+                <div className="absolute top-0 left-0 bg-red-900 text-5xl text-white px-3 py-1 rounded-br-xl font-serif">
                   “
                 </div>
 
                 {/* Rating */}
-                <div className="absolute top-3 right-3 flex space-x-1 px-2 py-1 bg-red-700 text-yellow-400 rounded">
+                <div className="absolute top-3 right-3 flex space-x-1 px-2 py-1 bg-red-800 text-yellow-400 rounded">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} className="text-sm sm:text-base" />
                   ))}
@@ -135,7 +136,7 @@ const Feedback = () => {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-red-700"
+                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-red-900"
                     />
                   </div>
                   <div className="text-left">

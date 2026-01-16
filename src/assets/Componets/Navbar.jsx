@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       {/* NAVBAR */}
       <nav className=" top-0 left-0 w-full bg-white shadow-md -mb-16">
-        <div className="bg-red-900 text-white text-sm py md:py-2 py-1">
+        <div className="bg-red-800 text-white text-center py-1 text-sm px-2 md:px-24">
           <Announce></Announce>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">

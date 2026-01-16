@@ -45,8 +45,11 @@ const Achieve = () => {
   };
 
   return (
-    <section ref={sectionRef} className="bg-red-900 py-12 sm:py-16 lg:py-24">
+    <section ref={sectionRef} className="bg-[#161616] ">
       <div className="max-w-7xl mx-auto px-4 py-16 sm:py-32">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-12">
+          Our Achievements
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
 
           {/* Card */}

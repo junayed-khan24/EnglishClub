@@ -46,11 +46,11 @@ const About = () => {
               {profile.name}
             </h1>
 
-            <p className="sm:text-base md:text-lg leading-relaxed">
+            <p className="sm:text-base md:text-lg leading-relaxed text-left">
               {profile.bio1}
             </p>
 
-            <p className="sm:text-base md:text-lg leading-relaxed">
+            <p className="sm:text-base md:text-lg leading-relaxed text-left">
               {profile.bio2}
             </p>
           </div>

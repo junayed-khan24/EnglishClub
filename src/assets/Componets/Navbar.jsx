@@ -50,7 +50,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden bg-white shadow-md">
-            {["/", "aboutClub", "Courses", "contact"].map((path, i) => (
+            {["/", "/", "/", "/"].map((path, i) => (
               <Link
                 key={i}
                 to={path}

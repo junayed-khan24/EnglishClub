@@ -12,7 +12,7 @@ const testimonials = [
   {
     id: 1,
     name: "Sabbir Sheikh",
-    location: "Uttara, Dhaka",
+    location: "Sadar, Mymensingh",
     image: "https://i.ibb.co/7RyhRwx/avatar1.png",
     feedback:
       "I joined English Club for Bank Job preparation and Spoken English. The course was structured, practical, and result-oriented. The grammar and writing sessions really helped me improve.",
@@ -20,7 +20,7 @@ const testimonials = [
   {
     id: 2,
     name: "Sazzadur Rahman",
-    location: "Mirpur, Dhaka",
+    location: "Fulbaria, Mymensingh",
     image: "https://i.ibb.co/QdJQ1pH/avatar2.png",
     feedback:
       "Excellent coaching center! I enrolled in IELTS at English Club and saw huge improvement in just a few weeks. The teachers are highly experienced and focus on individual weaknesses.",
@@ -28,7 +28,7 @@ const testimonials = [
   {
     id: 3,
     name: "Raihan Alam",
-    location: "Banani, Dhaka",
+    location: "Phulpur, Mymensingh",
     image: "https://i.ibb.co/yhj7trb/avatar3.png",
     feedback:
       "English Club helped me overcome my speaking fear. The classes are interactive, and teachers are very supportive. I can now express myself confidently in English!",
@@ -36,7 +36,7 @@ const testimonials = [
   {
     id: 4,
     name: "Jannatul Ferdous",
-    location: "Dhanmondi, Dhaka",
+    location: "Trishal, Mymensingh",
     image: "https://i.ibb.co/FgP0yQw/avatar4.png",
     feedback:
       "Great learning environment for kids at English Club! My son enjoys every class, and I can already see improvement in his pronunciation and confidence.",
@@ -44,7 +44,7 @@ const testimonials = [
   {
     id: 5,
     name: "Nusrat Jahan",
-    location: "Bashundhara, Dhaka",
+    location: "Gafargaon, Mymensingh",
     image: "https://i.ibb.co/fvQFY8k/avatar5.png",
     feedback:
       "The online classes at English Club are convenient and well-organized. The instructors are friendly and professional. Highly recommend their online English course!",
@@ -52,7 +52,7 @@ const testimonials = [
   {
     id: 6,
     name: "Tanvir Hasan",
-    location: "Mohakhali, Dhaka",
+    location: "Mymensingh Sadar, Mymensingh",
     image: "https://i.ibb.co/xFm4kLW/avatar6.png",
     feedback:
       "Best place to prepare for IELTS! English Club’s feedback sessions and mock tests helped me score higher than I expected. Thank you English Club!",

@@ -52,7 +52,7 @@ const testimonials = [
   {
     id: 6,
     name: "Tanvir Hasan",
-    location: "Mymensingh Sadar, Mymensingh",
+    location: "Sadar, Mymensingh",
     image: "https://i.ibb.co/xFm4kLW/avatar6.png",
     feedback:
       "Best place to prepare for IELTS! English Club’s feedback sessions and mock tests helped me score higher than I expected. Thank you English Club!",

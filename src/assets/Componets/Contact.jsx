@@ -9,7 +9,7 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Contact <span className="text-red-700">EnglishClub</span>
+            Contact <span className="text-red-800">EnglishClub</span>
           </h2>
           <p className="mt-3 text-base-content/70 max-w-xl mx-auto">
             Have questions about our courses or admissions?

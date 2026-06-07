@@ -60,7 +60,7 @@ const courses = [
 
 const Courses = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen py-16 mt-6 px-4 md:px-10">
+    <div className=" bg-gradient-to-b from-gray-50 to-white  py-16 mt-6  ">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -78,7 +78,7 @@ const Courses = () => {
       </motion.div>
 
       {/* Courses Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl a px-4 md:px-16 mx-auto">
         {courses.map((course, index) => (
           <motion.div
             key={course.id}

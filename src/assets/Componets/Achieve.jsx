@@ -46,7 +46,7 @@ const Achieve = () => {
 
   return (
     <section ref={sectionRef} className="bg-[#161616] ">
-      <div className="max-w-7xl mx-auto px-4 py-16 sm:py-32">
+      <div className="max-w-7xl mx-auto px-4 md:px-16 py-16 sm:py-32">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-12">
           Our Achievements
         </h2>

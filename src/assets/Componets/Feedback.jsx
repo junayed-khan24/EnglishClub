@@ -62,7 +62,7 @@ const testimonials = [
 
 const Feedback = () => {
   return (
-    <section className="bg-gray-50 py-16 ">
+    <section className="bg-gray-50  ">
       <div className="max-w-7xl mx-auto px-4 md:px-16 text-center">
         {/* Section Header */}
         <motion.h2
@@ -111,7 +111,7 @@ const Feedback = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="bg-white shadow-lg rounded-xl p-6 m-3 relative border-t-4 border-red-900 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full"
+                className="bg-white shadow-lg rounded-xl p-6  relative border-t-4 border-red-900 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full"
               >
                 {/* Quote Icon */}
                 <div className="absolute top-0 left-0 bg-red-900 text-5xl text-white px-3 py-1 rounded-br-xl font-serif">

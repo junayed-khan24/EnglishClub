@@ -13,7 +13,7 @@ const About = () => {
 
   return (
     <section className="py-10 sm:py-14 md:py-20 text-center md:text-left bg-gray-50  dark:bg-gray-900 min-h-screen flex items-center">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div className=" mx-auto px-4 md:px-16  max-w-7xl">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center lg:items-start">
           
           {/* Image Section */}

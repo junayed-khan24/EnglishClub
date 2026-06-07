@@ -68,7 +68,7 @@ const Hero = () => {
             className="w-full h-full object-cover brightness-50"
           />
           {/* Text overlay */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left px-4 md:px-16 lg:px-24">
+          <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left px-4 md:px-16 ">
             <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-6">
               {slide.title}
             </h1>

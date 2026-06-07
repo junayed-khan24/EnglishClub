@@ -10,14 +10,14 @@ const Navbar = () => {
     <>
       {/* NAVBAR */}
       <nav className=" top-0 z-50 fixed left-0 w-full bg-white shadow-md -mb-16">
-        <div className="bg-red-800 text-white text-center text-sm md:text-2xl  px-4 md:px-24 ">
-          {/* <Announce></Announce> */}
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+        {/* <div className="bg-red-800 text-white text-center py-1 text-sm md:text-2xl  px-4 md:px-24 ">
+          <Announce></Announce>
+        </div> */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-16 py-2">
           <div className="flex justify-between h-16 items-center">
 
             {/* Logo */}
-            <Link to="/" className="text-2xl font-bold text-red-800">
+            <Link to="/" className="text-2xl font-extrabold text-red-800">
               <span className="text-3xl">E</span>nglish
               <span className="text-3xl">C</span>lub
             </Link>

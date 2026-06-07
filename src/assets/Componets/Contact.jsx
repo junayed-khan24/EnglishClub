@@ -4,7 +4,7 @@ import MymensinghMap from "./MymensinghMap";
 const Contact = () => {
   return (
     <section className="bg-base-200 py-16">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto md:px-16 px-4">
 
         {/* Header */}
         <div className="text-center mb-14">

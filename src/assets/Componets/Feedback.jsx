@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
-import img from "../../../public/asset/junayed.png"
+import img from "/public/asset/junayed.png"
 // Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";

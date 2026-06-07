@@ -3,9 +3,9 @@ import { HiArrowRight } from "react-icons/hi";
 import { useSwipeable } from "react-swipeable";
 
 // Import images
-import Slide1 from "../../../public/asset/Slide1.jpg";
-import Slide2 from "../../../public/asset/Slide2.jpg";
-import Slide3 from "../../../public/asset/Slide3.jpg";
+import Slide1 from "f/public/asset/Slide1.jpg";
+import Slide2 from "/public/asset/Slide2.jpg";
+import Slide3 from "/public/asset/Slide3.jpg";
 
 const slides = [
   {

@@ -6,17 +6,17 @@ import { useSwipeable } from "react-swipeable";
 
 const slides = [
   {
-    image: "../../../public/asset/Slide1.jpg",
+    image: "../slide1.jpg",
     title: "Speak Smart",
     subtitle: "Learn English easily and speak first",
   },
   {
-    image: "../../../public/asset/Slide2.jpg",
+    image: "../slide2.jpg",
     title: "Fluent Future",
     subtitle: "Boost your English and speak confidently",
   },
   {
-    image: "../../../public/asset/Slide3.jpg",
+    image: "../slide3.jpg",
     title: "English Vibes",
     subtitle: "Join a modern club to practice, grow, and shine",
   },

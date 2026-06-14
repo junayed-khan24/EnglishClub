@@ -5,26 +5,23 @@ import { useSwipeable } from "react-swipeable";
 
 // Import images from src/assets
 
-import Slide1 from "../../../public/asset/Slide1.jpg";
-import Slide2 from "../../../public/asset/Slide2.jpg";
-import Slide3 from "../../../public/asset/Slide3.jpg";
 
 
 const slides = [
   {
-    image: Slide1,
+    image: "../Slide1.jpg",
     title: "Learn English Confidently",
     subtitle:
       "Join our English Club to practice speaking, listening, and communication in a friendly environment.",
   },
   {
-    image: Slide2,
+    image: "../Slide2.jpg",
     title: "Spoken English Coaching",
     subtitle:
       "Structured coaching to help you speak fluent, clear, and correct English for real-life situations.",
   },
   {
-    image: Slide3,
+    image: "../Slide3.jpg",
     title: "Global Communication Skills",
     subtitle:
       "Prepare yourself for global opportunities with strong English communication and professional confidence.",

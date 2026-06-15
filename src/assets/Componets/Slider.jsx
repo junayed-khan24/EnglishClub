@@ -4,24 +4,26 @@ import { Link } from "react-router-dom"; // fix: react-router-dom
 import { useSwipeable } from "react-swipeable";
 
 // Import images from src/assets
-
+import Slide1 from "../../assets/Slide1.jpg";
+import Slide2 from "../../assets/Slide2.jpg";
+import Slide3 from "../../assets/Slide3.jpg";
 
 
 const slides = [
   {
-    image: "../Slide1.jpg",
+    image: Slide1,
     title: "Learn English Confidently",
     subtitle:
       "Join our English Club to practice speaking, listening, and communication in a friendly environment.",
   },
   {
-    image: "../Slide2.jpg",
+    image: Slide2,
     title: "Spoken English Coaching",
     subtitle:
       "Structured coaching to help you speak fluent, clear, and correct English for real-life situations.",
   },
   {
-    image: "../Slide3.jpg",
+    image: Slide3,
     title: "Global Communication Skills",
     subtitle:
       "Prepare yourself for global opportunities with strong English communication and professional confidence.",
